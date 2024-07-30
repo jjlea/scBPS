@@ -2,7 +2,7 @@
 
 Bacteria Polygenic Score in  Single-cell data.
 Description: a computational framework (scBPS) to incorporate microbial GWAS summary data with human single-cell transcriptomic data for the discovery of critical cellular contexts that are highly associated with gut microbial taxon.
-## install
+## Install
 
 ```R
 if (!require("BiocManager", quietly = TRUE))
