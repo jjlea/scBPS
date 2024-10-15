@@ -1,6 +1,7 @@
+# Linking microbial genetic signals and Single-Cell Transcriptomics to Unravel Host-microbe Interactions across Human Tissues
 
-# Overview:
-This scBPS workflow is designed for calculating BPS<sub>AUC</sub> scores and p-values for single-cell RNA sequencing data. 
+## Overview:
+We introduce scBPS to incorporate microbial GWAS summary data with human single-cell transcriptomic data for the discovery of critical cellular contexts that are highly associated with gut microbial taxon.
 
 
 ## How to run
