@@ -66,7 +66,8 @@ Before running the workflow, you need to install the required software and depen
 - Snakemake
 - R 4.2
 - Required Python packages: `scanpy`, `scdrs`, `pandas`, `numpy`, `argparse`
-- Install scBPS rpackage: `devtools::install_github("jjlea/scBPS", subdir = "rpackage")`
+- Install scBPS rpackage:
+  `devtools::install_github("jjlea/scBPS", subdir = "rpackage")`
 - Required other R packages: `DelayedArray`, `data.table`, `reshape2`, `DelayedMatrixStats`
 
 
