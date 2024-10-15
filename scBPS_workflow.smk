@@ -49,6 +49,5 @@ rule calculate_AUC_pvalue:
         bpsauc=config["outdir"] + "/BPS_AUC.txt"
     shell:
         """
-        source activate R4.2
         Rscript {workflow.basedir}/scripts/calculate_AUC.R {input.norm_score} {input.myanno} {output.pauc} {output.bpsauc}
         """
