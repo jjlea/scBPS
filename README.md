@@ -29,22 +29,18 @@ snakemake -s scBPS_workflow.smk \
 
 ## Parameters
 
-`zscore_file`: This file contains two columns and is used for storing GWAS-derived top genes and their corresponding gene weights for score calculation. The two columns are: 
-
-	The first column `TRAIT` Represents the specific trait or phenotype from the GWAS analysis.
+`zscore_file`: This file contains two columns and is used for storing GWAS-derived top genes and their corresponding gene weights for score calculation. Each row corresponds to a specific trait and its associated gene set. The two columns are: 
+  - The first column `TRAIT` Represents the specific trait or phenotype from the GWAS analysis.
+  - The second column `GENESET` contains the associated set of genes for each trait, listed in a comma-separated format.
  
-	The second column `GENESET` contains the associated set of genes for each trait, listed in a comma-separated format.
-	Each row corresponds to a specific trait and its associated gene set. 
 
 
 `scfile`: This file contains single-cell RNA sequencing data in .h5ad format (AnnData). It stores gene expression information across individual cells (required), along with any associated annotations such as cell type and metadata.
 
 
 `anno`: This file contains two columns and provides cell annotations for single-cell RNA sequencing data. The columns are as follows: 
-
-	 The first column `cell_id` contains the unique cell identifier (ID) for each cell.
- 
-	 The second column `cell_annotation` contains cell annotation information. Each unique group in this column will be treated as a distinct cell population, which will be used to calculate the BPS<sub>AUC</sub> score and p-value. Cells that do not belong to any of the relevant or interested cell population groups should be labeled as “other” in this column.
+  - The first column `cell_id` contains the unique cell identifier (ID) for each cell.
+  - The second column `cell_annotation` contains cell annotation information. Each unique group in this column will be treated as a distinct cell population, which will be used to calculate the BPS<sub>AUC</sub> score and p-value. Cells that do not belong to any of the relevant or interested cell population groups should be labeled as “other” in this column.
 
 
 `outdir`: This directory specifies the output location where all results will be saved.
