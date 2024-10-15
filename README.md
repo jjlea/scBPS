@@ -1,4 +1,4 @@
-# Linking microbial genetic signals and Single-Cell Transcriptomics to Unravel Host-microbe Interactions across Human Tissues
+# Linking Microbial Genetic Signals and Single-Cell Transcriptomics to Unravel Host-microbe Interactions across Human Tissues
 
 ## Overview:
 We introduce scBPS to incorporate microbial GWAS summary data with human single-cell transcriptomic data for the discovery of critical cellular contexts that are highly associated with gut microbial taxon.
