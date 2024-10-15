@@ -1,11 +1,11 @@
 
-### Overview:
+# Overview:
 This scBPS workflow is designed for calculating BPSAUC scores and p-values for single-cell RNA sequencing data. The workflow integrates GWAS-derived gene sets with single-cell RNA-seq data to identify relevant gene signatures in specific cell populations.
 
 
-### How to run
+## How to run
 
-```shell
+```Shell
 snakemake -s scBPS_workflow.smk \
     --cores N \
     --config zscore_file=<path_to_zscore_file> \
@@ -15,9 +15,9 @@ snakemake -s scBPS_workflow.smk \
 ```
 
 
-Example
+## Example
 
-```shell
+```Shell
 snakemake -s scBPS_workflow.smk \
     --cores 4 \
     --config zscore_file=test/test_gene_zscore.txt  \
@@ -27,7 +27,7 @@ snakemake -s scBPS_workflow.smk \
 ```
 
 
-### Parameters
+## Parameters
 
 `zscore_file`: This file contains two columns and is used for storing GWAS-derived top genes and their corresponding gene weights for score calculation. The two columns have the following headers: 
 	“TRAIT”: The first column Represents the specific trait or phenotype from the GWAS analysis.
@@ -48,7 +48,7 @@ snakemake -s scBPS_workflow.smk \
 
 `--cores`: The number of CPU cores to be used. 
 
-### Outputs
+## Outputs
 
 `norm_score.tsv`: A tab-separated text file containing cell-wise scores for each cell across all traits.
 
@@ -60,7 +60,7 @@ snakemake -s scBPS_workflow.smk \
 
 
 
-### Installation and Requirements
+## Installation and Requirements
 
 Before running the workflow, you need to install the required software and dependencies:
 
