@@ -1,4 +1,4 @@
-# Linking Microbial Genetic Signals and Single-Cell Transcriptomics to Unravel Host-microbe Interactions across Human Tissues
+![image](https://github.com/user-attachments/assets/c8c370f0-a075-4807-9e8d-67c60b15925b)# Linking Microbial Genetic Signals and Single-Cell Transcriptomics to Unravel Host-microbe Interactions across Human Tissues
 
 ## Overview:
 We introduce scBPS to incorporate microbial GWAS summary data with human single-cell transcriptomic data for the discovery of critical cellular contexts that are highly associated with gut microbial taxon.
@@ -7,7 +7,7 @@ We introduce scBPS to incorporate microbial GWAS summary data with human single-
 ## How to run
 
 ```Shell
-snakemake -s scBPS_workflow.smk \
+snakemake -s scBPS.smk \
     --cores N \
     --config zscore_file=<path_to_zscore_file> \
              scfile=<path_to_scfile> \
@@ -19,7 +19,7 @@ snakemake -s scBPS_workflow.smk \
 ## Example
 
 ```Shell
-snakemake -s scBPS_workflow.smk \
+snakemake -s scBPS.smk \
     --cores 4 \
     --config zscore_file=test/test_gene_zscore.txt  \
              scfile=test/test_adata.h5ad \
@@ -36,7 +36,7 @@ snakemake -s scBPS_workflow.smk \
  
 
 
-`scfile`: This file contains single-cell RNA sequencing data in .h5ad format (AnnData). It stores gene expression information across individual cells (required), along with any associated annotations such as cell type and metadata.
+`scfile`: This file contains single-cell RNA sequencing data in .h5ad format (AnnData). It stores gene expression information across individual cells (required, size-factor-normalized and log-transformed), along with any associated annotations such as cell type and metadata.
 
 
 `anno`: This file contains two columns and provides cell annotations for single-cell RNA sequencing data. The columns are as follows: 
