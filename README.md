@@ -2,7 +2,7 @@
 
 ## Overview:
 We introduce scBPS to incorporate microbial GWAS summary data with human single-cell transcriptomic data for the discovery of critical cellular contexts that are highly associated with gut microbial taxon.
-Citation: "Li, J., Ma, Y., Cao, Y. et al. **Integrating microbial GWAS and single-cell transcriptomics reveals associations between host cell populations and the gut microbiome**. Nat Microbiol 10, 1210–1226 (2025). https://doi.org/10.1038/s41564-025-01978-w"
+
 
 ## How to run
 
@@ -71,5 +71,7 @@ Before running the workflow, you need to install the required software and depen
   `devtools::install_github("jjlea/scBPS", subdir = "rpackage")`
 - Required other R packages: `DelayedArray`, `data.table`, `reshape2`, `DelayedMatrixStats`
 
+## Citation: 
+"Li, J., Ma, Y., Cao, Y. et al. **Integrating microbial GWAS and single-cell transcriptomics reveals associations between host cell populations and the gut microbiome**. Nat Microbiol 10, 1210–1226 (2025). https://doi.org/10.1038/s41564-025-01978-w"
 
 
